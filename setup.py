@@ -133,17 +133,11 @@ elif platform.system() == "Linux":
     install_req.append('mss')
     install_req.append('vgamepad>=0.1.0')
 
-# Short readme for PyPI
-HERE = os.path.abspath(os.path.dirname(__file__))
-README_FOLDER = os.path.join(HERE, "readme")
-with open(os.path.join(README_FOLDER, "pypi.md")) as fid:
-    README = fid.read()
 
 setup(
     name='tmrl',
     version=TMRL_VERSION,
     description='Network-based framework for real-time robot learning',
-    long_description=README,
     long_description_content_type='text/markdown',
     keywords='reinforcement learning, robot learning, trackmania, self driving, roborace',
     license='MIT',
